@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+/*Estilos generales sel sitio */
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(115, 142, 240);
+    color: rgb(35, 36, 36); 
+}
+/*Definir estilo del encabezado*/ 
+header {
+    background-color: rgb(141, 201, 233);
+    padding: 25px;
+    text-align: center;
+}
+/*estilos del logo*/
+.logo{
+    width: 100px;
+}
+/*estilos del navegador*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+/*estilos de los items de la lista*/
+nav ul li{
+    margin: 0 15px;
+}
+/*esttilos a los enlaces del navgeador*/
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(151, 151, 191);
+}
+/*estilos al area principal*/
+main {
+    padding: 30px;
+    text-align: center;
+}
+/*estilos a la seccion*/
+section{
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgb(234, 225, 212);
+    border-radius: 120px;
+    box-shadow: 0px 4px 8px rgb(31, 31, 37);
+       }
+
+/*pie de pagina*/ 
+footer{
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}   
+/*estilo de imagenes*/
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}    
+
+/*estilos para ñas tarjetas de sevicio*/ 
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/*estilos a cada tarjeta*/
+.tarjeta{
+    background-color: rgb(242, 221, 192);
+    padding: 20px;
+    border: 2px solid #e8dccd;
+    border-radius: 30px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+}
+/*diseño responsivo*/
+@media(max-width:768px){
+    /*cambiar la orientacion a columnas del menu*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    .tarjetas{
+        flex-direction:column;
+        align-items: center;
+    }
+    .tarjeta{
+        width: 80%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: darkgreen;
+}
+
+.plan {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.plan img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
